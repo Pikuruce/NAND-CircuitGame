@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG NAND回路</title>
+    <link rel="stylesheet" href="CSS/WiringShrimpShop.css">
+</head>
+<body>
+    <video src="mp4/エビ.mp4" autoplay loop muted playsinline></video>
+    <svg id="circuit"></svg>
+    <div id="palette">
+    <div class="nand-box" draggable="true">NAND</div>
+    </div>
+    <button id="runButton">結果を見る</button>
+    <div id="result-model">
+    <button id="closeButton" onclick="this.parentElement.style.display='none'" style="display: none">閉じる</button>
+    <div id="result"></div>
+    </div>
+    <button id="showAssignment" onclick="document.getElementById('assignment').style.display='block'">課題出力</button>
+    <div id="assignment" style="display: none">
+        <button onclick="this.parentElement.style.display='none'">閉じる</button>
+        <table id="assignmentTable"></table>
+    </div>
+    <button id="resetButton">リセット</button>
+    <button onclick="document.getElementById('rulu').style.display='block'">ルール説明</button>
+    <div id="rulu" style="display: none">
+        <button onclick="this.parentElement.style.display='none'">閉じる</button>
+        <p>ゲームの説明</p>
+        <p>・各部品は色のついているところをドラッグアンドドロップで動かせます</p>
+        <p>・黒い点同士(出力と入力)をドラッグアンドドロップでつなげられます</p>
+        <p>・NAND部品は下のNANDから引っ張り出せます</p>
+        <p>・ワイヤー(黒い線)はクリックで消せます</p>
+        <p>・出来上がったら「結果を見る」で答え合わせです</p>
+        <p>・電源は上から順にP1・P2です</p>
+        <p>・今回のお題は課題出力から確認できます</p>
+        <p>・スコアは経過時間で計算されています、スコア100越えがひとつの目標です</p>
+    </div>
+    <script src="Js/WiringShrimpShop.js"></script>
+</body>
+</html>
