@@ -9,7 +9,16 @@
     <video src="mp4/エビ.mp4" autoplay loop muted playsinline></video>
     <svg id="circuit"></svg>
     <div id="palette">
-    <div class="nand-box" draggable="true">NAND</div>
+        <div class="difficultySelector">
+            <label for="difficulty">難易度を選ぶ:</label>
+            <select id="difficulty">
+                <option value="easy" selected>簡単</option>
+                <option value="normal">普通</option>
+                <option value="hard">難しい</option>
+            </select>
+            <button id="startGame">ゲームスタート</button>
+        </div>
+        <div class="nand-box" draggable="true">NAND</div>
     </div>
     <button id="runButton">結果を見る</button>
     <div id="result-model">
@@ -21,7 +30,6 @@
         <button onclick="this.parentElement.style.display='none'">閉じる</button>
         <table id="assignmentTable"></table>
     </div>
-    <button id="resetButton">リセット</button>
     <button onclick="document.getElementById('rulu').style.display='block'">ルール説明</button>
     <div id="rulu" style="display: none">
         <button onclick="this.parentElement.style.display='none'">閉じる</button>
