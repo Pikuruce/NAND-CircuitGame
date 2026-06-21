@@ -80,8 +80,8 @@ Higher scores are awarded for faster solutions.
 ## Project Structure
 
 ```text
-WiringShrimpShop/
-├── WiringShrimpShop.html
+NAND-CircuitGame/
+├── index.html
 ├── CSS/
 ├── Js/
 ├── img/
