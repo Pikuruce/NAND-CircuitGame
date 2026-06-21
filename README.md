@@ -84,7 +84,8 @@ NAND-CircuitGame/
 ├── index.html
 ├── CSS/
 ├── Js/
-├── img/
+├── jpeg/
+├── mp4/
 └── README.md
 ```
 
