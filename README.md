@@ -1,8 +1,8 @@
-# Wiring Shrimp Shop
+# NAND-CircuitGame
 
 ## Overview
 
-**Wiring Shrimp Shop** is a puzzle game in which players build logic circuits using only **NAND gates**.
+**NAND-CircuitGame** is a puzzle game in which players build logic circuits using only **NAND gates**.
 
 The objective is to connect the power sources, NAND gates, and the destination server so that the circuit satisfies the target truth table for every possible input pattern.
 
