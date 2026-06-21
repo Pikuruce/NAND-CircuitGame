@@ -458,13 +458,13 @@ class GameMap {
     }
 
     * generatePatterns(n) {
-    for (let i = 0; i < (1 << n); i++) {
-        const pattern = [];
-        for (let j = 0; j < n; j++) {
-        pattern.push(Boolean(i & (1 << j)));
+        for (let i = 0; i < (1 << n); i++) {
+            const pattern = [];
+            for (let j = 0; j < n; j++) {
+            pattern.push(Boolean(i & (1 << j)));
+            }
+            yield pattern;
         }
-        yield pattern;
-    }
     }
 
     showResult() {
