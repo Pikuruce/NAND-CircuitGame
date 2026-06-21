@@ -94,6 +94,4 @@ WiringShrimpShop/
 
 * Additional logic gates
 * More puzzle stages
-* Circuit save/load
-* Hint system
 * Better circuit validation
