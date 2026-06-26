@@ -1,47 +1,47 @@
 # NAND-CircuitGame
 
-## Overview
+## 概要
 
-**NAND-CircuitGame** is a puzzle game in which players build logic circuits using only **NAND gates**.
+**NAND-CircuitGame**は、**NANDゲート**のみを使用して論理回路を構築するパズルゲームです。
 
-The objective is to connect the power sources, NAND gates, and the destination server so that the circuit satisfies the target truth table for every possible input pattern.
-
----
-
-## Features
-
-* Drag and drop NAND gates onto the workspace
-* Connect components by dragging between connectors
-* Move gates after placement
-* Remove wires by clicking them
-* Automatic evaluation of all input patterns
-* Score based on completion time
-* Multiple difficulty levels
+目的は、電源、NANDゲート、および宛先サーバーを接続し、あらゆる入力パターンにおいて回路が目標とする真理値表を満たすようにすることです。
 
 ---
 
-## How to Play
+## 機能
 
-1. Drag a **NAND gate** from the palette onto the circuit board.
-2. Connect the output and input connectors with wires.
-3. Build a circuit that matches the target truth table.
-4. Press **Execute** to evaluate the circuit.
-5. If every input pattern produces the expected output, you clear the stage.
+* NANDゲートをドラッグ＆ドロップで作業エリアに配置
+* コネクタ間をドラッグしてコンポーネントを接続
+* 配置後のゲート移動が可能
+* 配線をクリックして削除可能
+* すべての入力パターンを自動的に評価
+* 完了時間に基づくスコア算出
+* 複数の難易度レベル
 
 ---
 
-## Controls
+## 遊び方
 
-| Action         | Description       |
+1. パレットから**NANDゲート**を回路ボード上にドラッグします。
+2. 出力コネクタと入力コネクタを配線で接続します。
+3. 目標とする真理値表に合致する回路を構築します。
+4. **Execute**（実行）ボタンを押して回路を評価します。
+5. すべての入力パターンで期待通りの出力が得られれば、ステージクリアです。
+
+---
+
+## 操作方法
+
+| 操作           | 説明              |
 | -------------- | ----------------- |
-| Drag & Drop    | Place a NAND gate |
-| Drag Component | Move a component  |
-| Drag Connector | Create a wire     |
-| Click Wire     | Delete a wire     |
+| ドラッグ＆ドロップ | NANDゲートを配置  |
+| コンポーネントをドラッグ | コンポーネントを移動 |
+| コネクタをドラッグ | 配線を作成        |
+| 配線をクリック | 配線を削除        |
 
 ---
 
-## Technologies
+## 使用技術
 
 * HTML5
 * CSS3
@@ -50,34 +50,32 @@ The objective is to connect the power sources, NAND gates, and the destination s
 
 ---
 
-## Circuit Evaluation
+## 回路の評価
 
-The circuit is evaluated using a simple signal propagation algorithm.
+回路は単純な信号伝播アルゴリズムを使用して評価されます。
 
-1. Initialize every connector to `false`.
-2. Apply the selected power input pattern.
-3. Propagate signals through all wires.
-4. Update the outputs of every NAND gate.
-5. Repeat until no signal changes.
-6. Compare the output with the target truth table.
+1. すべてのコネクタを `false` に初期化します。
+2. 選択された電源入力パターンを適用します。
+3. すべての配線を通じて信号を伝播させます。
+4. すべてのNANDゲートの出力を更新します。
+5. 信号の変化がなくなるまで繰り返します。
+6. 出力を目標の真理値表と比較します。
 
-All `2ⁿ` input combinations are automatically generated and tested.
+`2ⁿ` 通りのすべての入力組み合わせが自動的に生成され、テストされます。
 
 ---
 
-## Score
+## スコア
 
-The score is calculated from the completion time.
+スコアは完了時間から算出されます。
 
 ```text
 Score = ceil(baseTime / elapsedTime × 100)
 ```
 
-Higher scores are awarded for faster solutions.
+より速く解くほど、高いスコアが得られます。 ---
 
----
-
-## Project Structure
+## ディレクトリ構成
 
 ```text
 NAND-CircuitGame/
@@ -87,12 +85,10 @@ NAND-CircuitGame/
 ├── jpeg/
 ├── mp4/
 └── README.md
-```
-
 ---
 
-## Future Improvements
+## 今後の改善点
 
-* Additional logic gates
-* More puzzle stages
-* Better circuit validation
+* 論理ゲートの追加
+* パズルステージの追加
+* 回路検証機能の強化
